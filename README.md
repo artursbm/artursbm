@@ -7,7 +7,7 @@
 <div align="center">
   <a href="https://github.com/artursbm">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=artursbm&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=artursbm&layout=compact&langs_count=20&theme=dracula" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=artursbm&layout=default&langs_count=10&theme=dracula&hide=jupyter%20notebook&hide=Makefile" />
 </div>
   
 <!---
