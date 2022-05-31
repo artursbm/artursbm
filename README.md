@@ -5,9 +5,9 @@
 - 🧠 What strives me the most in technology is the impact it can take on society, while it can be also inclusive and generate changes on people's life.
 
 <div align="center">
-  <a href="https://github.com/matsennin">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=matsennin&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=matsennin&layout=compact&langs_count=7&theme=dracula" />
+  <a href="https://github.com/artursbm">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=artursbm&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=artursbm&layout=compact&langs_count=7&theme=dracula" />
 </div>
   
 <!---
