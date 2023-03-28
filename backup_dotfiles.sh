@@ -11,9 +11,9 @@ function printmsg()
 function undochgs()
 {
     printmsg "Undoing link: $1 -> $2" false
-    unlink $1
+    unlink "$1"
     ls -la | grep .test_dotfile
-    rm $2
+    rm "$2"
     printmsg "\nChange undone!\n" false
 }
 
@@ -21,7 +21,8 @@ DOTFILE_FOLDER=~/Git/personal/artursbm/dotfiles/
 # remove the line below
 touch $HOME/.test_dotfile
 for (( i=1; i<=$#;i++)); do
-    FILE=${!i}
+    FILE="${!i}"
+
     # $LINK is the original file that will be symlinked
     LINK=$HOME"/"$FILE
     # $DOTFILE is the file after being moved to dotfile folder
@@ -29,10 +30,10 @@ for (( i=1; i<=$#;i++)); do
     DOTFILE=$DOTFILE_FOLDER$FILE
 
     printmsg "Backing up $FILE dotfile..."
-    mv $LINK $DOTFILE_FOLDER
-    ln -s $DOTFILE $LINK
+    mv "$LINK" "$DOTFILE_FOLDER"
+    ln -s "$DOTFILE" "$LINK"
     printmsg "Done!"
 
-    undochgs $LINK $DOTFILE
+    undochgs "$LINK" "$DOTFILE"
 done
 
