@@ -40,6 +40,7 @@ echo "email: $EMAIL"
 # echo "Installing colima...";
 # # brew install colima
 # colima version;
+# colima start --cpu 2 --memory 4 --disk 30
 # echo "\n"
 
 # # echo "Installing maccy, shottr...";
