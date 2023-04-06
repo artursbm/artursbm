@@ -27,10 +27,10 @@ function insidefolder()
 {
     case "$1" in
         *"/"*)
-        return true
+        return 1
         ;;
     esac
-    return false
+    return 0
 
 }
 
@@ -38,7 +38,7 @@ function create_dotfiles()
 {
     for (( i=1; i<=$#;i++)); do
         FILE="${!i}"
-        if [ insidefolder "$FILE" ]; then
+        if [ "$(insidefolder "$FILE")" ]; then
             echo "$FILE inside folder"
         fi
         
@@ -65,7 +65,7 @@ function create_dotfiles()
 
 function undo_dotfiles() 
 {
-    for(( i=1; i<=$#; i++ )); do
+    for (( i=1; i<=$#; i++ )); do
         FILE="${!i}"
         DOTFILE="$DOTFILE_FOLDER$FILE"
         LINKFILE="$HOME/$FILE"
