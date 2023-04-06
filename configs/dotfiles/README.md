@@ -2,7 +2,7 @@
 
 - .vimrc
 - .zshrc
-- .ssh/config
+- .ssh/config (TODO)
 - .gitconfig
 - .asdfrc
 - ayu.itermcolors
